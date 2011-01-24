@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  date_of_purchase: 
+  price: 9.99
+  vendor: MyString
+
+two:
+  date_of_purchase: 
+  price: 9.99
+  vendor: MyString

@@ -1,0 +1,24 @@
+<h1>Listing firearms</h1>
+
+<table>
+  <tr>
+    <th>Caliber</th>
+    <th>Times fired</th>
+    <th>Last clean date</th>
+  </tr>
+
+<% @firearms.each do |firearm| %>
+  <tr>
+    <td><%=h firearm.caliber %></td>
+    <td><%=h firearm.times_fired %></td>
+    <td><%=h firearm.last_clean_date %></td>
+    <td><%= link_to 'Show', firearm %></td>
+    <td><%= link_to 'Edit', edit_firearm_path(firearm) %></td>
+    <td><%= link_to 'Destroy', firearm, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New firearm', new_firearm_path %>

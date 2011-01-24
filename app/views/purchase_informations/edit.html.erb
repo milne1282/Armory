@@ -1,0 +1,24 @@
+<h1>Editing purchase_information</h1>
+
+<% form_for(@purchase_information) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :date_of_purchase %><br />
+    <%= f.text_field :date_of_purchase %>
+  </p>
+  <p>
+    <%= f.label :price %><br />
+    <%= f.text_field :price %>
+  </p>
+  <p>
+    <%= f.label :vendor %><br />
+    <%= f.text_field :vendor %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @purchase_information %> |
+<%= link_to 'Back', purchase_informations_path %>

@@ -1,0 +1,18 @@
+<p>
+  <b>Caliber:</b>
+  <%=h @firearm.caliber %>
+</p>
+
+<p>
+  <b>Times fired:</b>
+  <%=h @firearm.times_fired %>
+</p>
+
+<p>
+  <b>Last clean date:</b>
+  <%=h @firearm.last_clean_date %>
+</p>
+
+
+<%= link_to 'Edit', edit_firearm_path(@firearm) %> |
+<%= link_to 'Back', firearms_path %>

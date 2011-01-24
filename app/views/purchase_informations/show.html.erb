@@ -1,0 +1,18 @@
+<p>
+  <b>Date of purchase:</b>
+  <%=h @purchase_information.date_of_purchase %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%=h @purchase_information.price %>
+</p>
+
+<p>
+  <b>Vendor:</b>
+  <%=h @purchase_information.vendor %>
+</p>
+
+
+<%= link_to 'Edit', edit_purchase_information_path(@purchase_information) %> |
+<%= link_to 'Back', purchase_informations_path %>

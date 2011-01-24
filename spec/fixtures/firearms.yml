@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  caliber: MyString
+  times_fired: 1
+  last_clean_date: 
+
+two:
+  caliber: MyString
+  times_fired: 1
+  last_clean_date: 

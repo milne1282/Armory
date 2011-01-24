@@ -1,0 +1,18 @@
+<p>
+  <b>Brand:</b>
+  <%=h @product_information.brand %>
+</p>
+
+<p>
+  <b>Model:</b>
+  <%=h @product_information.model %>
+</p>
+
+<p>
+  <b>Serial number:</b>
+  <%=h @product_information.serial_number %>
+</p>
+
+
+<%= link_to 'Edit', edit_product_information_path(@product_information) %> |
+<%= link_to 'Back', product_informations_path %>
